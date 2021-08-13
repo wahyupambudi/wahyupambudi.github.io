@@ -24,14 +24,53 @@
 				box-shadow: 4px 4px 4px 4px #D7D1D1;
 			}
 			
+			@media screen and (max-width: 1525px) {
+				canvas {
+					max-width: 100%;
+				}
+				.hidde {
+					display: none;
+				}
+			}
+			@media screen and (max-width: 1025px) {
+				canvas {
+					max-width: 100%;
+				}
+				.hidde {
+					display: none;
+				}
+			}
 			@media screen and (max-width: 900px) {
 				canvas {
 					max-width: 100%;
+				}
+				.hide {
+					display: none;
+				}
+				.hidde {
+					display: block;
 				}
 			}
 			@media screen and (max-width: 600px) {
 				canvas {
 					max-width: 100%;
+				}
+				.hide {
+					display: none;
+				}
+				.hidde {
+					display: block;
+				}
+			}
+			@media screen and (max-width: 480px) {
+				canvas {
+					max-width: 100%;
+				}
+				.hide {
+					display: none;
+				}
+				.hidde {
+					display: block;
 				}
 			}
 		</style>
@@ -71,19 +110,26 @@
 				<div id="coppercube" class="card-header bg-success text-light">
 					Hasil CopperCube
 				</div>
-				<br><br>
-				<div align="center" class="container">
-					<canvas id="3darea" width="800" height="600" style="background-color:#"#000000"">
-					</canvas>
+				<br>
+				<div class="hidde">
+					<h4>Disarankan Menggunakan Desktop.</h4><br>
+					<p>Mohon Maaf untuk tampilan mobile kami tidak berikan, karena terlalu berat untuk loading website nya.</p>
 				</div>
-				<script type="text/javascript">
-				<!--
-						startCopperLichtFromFile('3darea', 'copperlichtdata/index.ccbz', 'Loading $PROGRESS$...<br/><br/><img style="max-width:50%" src="copperlichtdata/coppercubeloadinglogo.png" />', 'Error: This browser does not support WebGL (or it is disabled).<br/>See <a href=\"http://www.ambiera.com/copperlicht/browsersupport.html\">here</a> for details.', false, true, "#000000");
-				-->
-				</script>
-				<br/>
-				<div align="center">
-					<small>Created using <a href="http://www.ambiera.com/coppercube/index.html">CopperCube</a></small>
+				<br><br>
+				<div class="hide">
+					<div align="center" class="container">
+						<canvas id="3darea" width="800" height="600" style="background-color:#"#000000"">
+						</canvas>
+					</div>
+					<script type="text/javascript">
+					<!--
+							startCopperLichtFromFile('3darea', 'copperlichtdata/index.ccbz', 'Loading $PROGRESS$...<br/><br/><img style="max-width:50%" src="copperlichtdata/coppercubeloadinglogo.png" />', 'Error: This browser does not support WebGL (or it is disabled).<br/>See <a href=\"http://www.ambiera.com/copperlicht/browsersupport.html\">here</a> for details.', false, true, "#000000");
+					-->
+					</script>
+					<br/>
+					<div align="center">
+						<small>Created using <a href="http://www.ambiera.com/coppercube/index.html">CopperCube</a></small>
+					</div>
 				</div>
 			</div>
 			<br>
@@ -189,7 +235,7 @@
 				<br><br>
 				<div class="card bg-putih" style="width: 100%;">
 					<!-- <div class="card-header bg-success text-light">
-																						Tugas Fotogrametri Grafika Komputer
+																																														Tugas Fotogrametri Grafika Komputer
 					</div> -->
 					<ul class="list-group list-group-flush">
 						<li class="utkhover list-group-item">Wahyu Pambudi - 19312302</li>
