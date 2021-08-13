@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="copperlichtdata/copperlicht.js"></script>
+		<title>Tugas Grafika</title>
+		<style>
+			.utkhover:hover {
+				color: white;
+				background-color: #0d6efd;
+				cursor: pointer;
+			}
+			.utklink:hover {
+				color: #212529;
+				background-color: #0E5BCC;
+			}
+			.bg-putih {
+				background-color: white;
+				box-shadow: 4px 4px 4px 4px #D7D1D1;
+			}
+			
+			@media screen and (max-width: 900px) {
+				canvas {
+					max-width: 100%;
+				}
+			}
+			@media screen and (max-width: 600px) {
+				canvas {
+					max-width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body class="bg-light">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Tugas Grafika</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item utklink">
+								<a class="nav-link active" aria-current="page" href="#coppercube">Hasil CopperCube</a>
+							</li>
+							<li class="nav-item utklink">
+								<a class="nav-link active" aria-current="page" href="#agisoft">Hasil Agisoft</a>
+							</li>
+							<li class="nav-item utklink">
+								<a class="nav-link active" aria-current="page" href="#blender">Hasil Blender</a>
+							</li>
+							<li class="nav-item utklink">
+								<a class="nav-link active" aria-current="page" href="#foto">Informasi Foto</a>
+							</li>
+							<li class="nav-item utklink">
+								<a class="nav-link active" aria-current="page" href="#anggota">Informasi Anggota</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container" align="center">
+			<div style="margin-top: 10px; padding: 20px" class="bg-putih">
+				<div id="coppercube" class="card-header bg-success text-light">
+					Hasil CopperCube
+				</div>
+				<br><br>
+				<div align="center" class="container">
+					<canvas id="3darea" width="800" height="600" style="background-color:#"#000000"">
+					</canvas>
+				</div>
+				<script type="text/javascript">
+				<!--
+						startCopperLichtFromFile('3darea', 'copperlichtdata/index.ccbz', 'Loading $PROGRESS$...<br/><br/><img style="max-width:50%" src="copperlichtdata/coppercubeloadinglogo.png" />', 'Error: This browser does not support WebGL (or it is disabled).<br/>See <a href=\"http://www.ambiera.com/copperlicht/browsersupport.html\">here</a> for details.', false, true, "#000000");
+				-->
+				</script>
+				<br/>
+				<div align="center">
+					<small>Created using <a href="http://www.ambiera.com/coppercube/index.html">CopperCube</a></small>
+				</div>
+			</div>
+			<br>
+			<!-- untuk hasil agisoft -->
+			<div style="margin-top: 10px; padding: 20px" class="bg-putih">
+				<div id="agisoft" class="card-header bg-success text-light">
+					Hasil Agisoft
+				</div><br>
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/1.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/2.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/3.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/4.jpg" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<br>
+			<!-- untuk hasil blender -->
+			<div style="margin-top: 10px; padding: 20px" class="bg-putih">
+				<div id="blender" class="card-header bg-success text-light">
+					Hasil Blender
+				</div><br>
+				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="img/5.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/6.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/7.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="img/8.jpg" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<br>
+			<!-- untuk Informasi Foto -->
+			<div style="margin-top: 10px; padding: 20px" class="bg-putih" align="left">
+				<div id="foto" class="card-header bg-success text-light">
+					Informasi Foto
+				</div><br>
+				<div class="card">
+					<h5 class="card-header">Jumlah Foto</h5>
+					<div class="card-body">
+						<p class="card-text">Jumlah Foto yang digunakan 76 Foto.</p>
+					</div>
+				</div>
+				<br>
+				<div class="card">
+					<h5 class="card-header">Lama Pengerjaan</h5>
+					<div class="card-body">
+						<p class="card-text">Berulang kali melakukan foto pada objek yang berbeda. <br>
+							<ul>
+								<li>3 objek pertama gagal, karena angle pada saat pengambilan gambar tidak rapih.</li>
+								<li>Objek berikutnya sudah cukup baik, hanya saja karena tidak fokus pada objek hasil dari agisoft tidak terlihat. </li>
+								<li>Terkahir dalam pengambilan foto hingga 76 foto menggunakan hp. Dengan pengaturan HDR dan pencahayaan yang rata gambar sudah dijadikan fotogrametri cukup baik.</li>
+							</ul>
+						Proses ini kurang lebih 2 Hari.</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- untuk informasi anggota -->
+			<div class="container bg-putih" style="padding: 20px">
+				<div id="anggota" class="card-header bg-success text-light">
+					Informasi Anggota
+				</div>
+				<br><br>
+				<div class="card bg-putih" style="width: 100%;">
+					<!-- <div class="card-header bg-success text-light">
+																						Tugas Fotogrametri Grafika Komputer
+					</div> -->
+					<ul class="list-group list-group-flush">
+						<li class="utkhover list-group-item">Wahyu Pambudi - 19312302</li>
+						<li class="utkhover list-group-item">Muhammad Ali Nasir - 19312248</li>
+						<li class="utkhover list-group-item">Yogi Pratama - 19312244</li>
+					</ul>
+				</div><br>
+				
+			</div>
+		</div>
+		
+		<div>
+			<nav class="navbar-dark bg-primary" style="text-align: center; padding: 15px">
+				<a class="navbar-brand">Terimakasih</a>
+			</nav>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	</body>
+</html>
