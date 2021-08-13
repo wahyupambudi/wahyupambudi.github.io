@@ -1,0 +1,164 @@
+body {
+	font-family: 'Slabo 27px', Serif;
+	width: 100%;
+	margin:0 auto;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+.imgmy{
+	border-radius: 10px;
+	position: relative;
+	margin-left: 43%;
+}
+.tatas{
+	text-align: center;
+	margin: 20 auto;
+	font-size: 80px;
+}
+.tatas1{
+	margin: 0 auto;
+}
+.about {
+	text-align: left;
+	font-size: 18px;
+}
+.logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+	.logo1 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		}	
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+	width: 100%;
+    padding: 10px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+header h1 {
+	color: #2f4f4f;
+	position: fixed;
+	left: 250px; 
+	top: 0px;
+}
+
+.table{
+	border: 0px solid;
+	border-bottom: 2px dotted rgb(88, 100, 234);
+	margin-left: 500px;
+	margin-right: 500px;
+	text-align: center;
+	padding: 2px;
+}
+.mar{
+	margin-right: 3px;
+}
+
+
+	/*nav*/
+nav {
+	float: right;
+	font-size: 20px;
+	right: 10px;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	display: inline-table;
+}
+nav a:hover {
+	background-color: rgb(44, 111, 178);
+	border-radius: 7px;
+	color: #fff;
+}
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	line-height: 30px;
+	padding:0 20px;
+	color: #000;
+}
+	
+/* welcome */
+.col{	
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.367);
+	margin-top: 150px;
+}
+.atas {
+	background-color: rgba(113, 238, 75, 0.258);
+}
+
+.destination{
+	background-color: rgba(199, 117, 199, 0.258);
+}
+
+.leg{
+	border: 2px dashed #7aacff;
+	color: rgb(122, 122, 234);
+	background-color: rgba(214, 67, 214, 0.258);
+}
+.font {
+	font-size: 40px;
+}
+h2 fieldset {
+	border: 2px dashed darkblue;
+}
+	
+/*section*/
+section {
+	clear: both;
+	position: static;
+	top: 0px;
+	background-image: url("./img/background_css.png");
+	background-size: 400px;
+}
+
+section h1 {
+	text-align: center;
+	color: #353535;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	font-size: 50px;
+	margin-top: 100px;
+	font-family: 'Arial Narrow', Arial, sans-serif;	
+	color: #2f4f4f;
+}
+h2 {
+	text-align: center;
+	color: #353535;
+	margin-bottom: 50px;
+	margin-top: 100px;
+	font-size: 30px;
+	font-family: 'Arial Narrow', Arial, sans-serif;	
+	color: #2f4f4f;
+}
+
+
+
+/*footer*/
+footer{
+	position: 0px;
+	bottom: 0; left: 0;
+	text-align: center;
+	background: #000;
+	color: #fff;
+	padding: 2px;
+	width: 100%;
+	margin:0 auto;
+}
+footer a{
+	text-decoration: none;
+	color: rgb(37, 155, 206);
+}
