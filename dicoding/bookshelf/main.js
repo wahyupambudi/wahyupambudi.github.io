@@ -1,6 +1,5 @@
 let books = [];
 const STORAGE_KEY = "books-app";
-
 const incompleteBookList = document.getElementById("incompleteBookList");
 const completeBookList = document.getElementById("completeBookList");
 
@@ -202,27 +201,30 @@ const editBook = (bookId) => {
   document.getElementById("bookFormYearEdit").value = bookTarget.year;
   document.getElementById("bookFormIsCompleteEdit").checked =
     bookTarget.isComplete;
-
-  const formEdit = document.getElementById("bookFormEdit");
-  formEdit.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const updatedBook = {
-      id: bookTarget.id,
-      title: document.getElementById("bookFormTitleEdit").value,
-      author: document.getElementById("bookFormAuthorEdit").value,
-      year: document.getElementById("bookFormYearEdit").value,
-      isComplete: document.getElementById("bookFormIsCompleteEdit").checked,
-    };
-
-    bookTarget.title = updatedBook.title;
-    bookTarget.author = updatedBook.author;
-    bookTarget.year = updatedBook.year;
-    bookTarget.isComplete = updatedBook.isComplete;
-    updateDataToStorage();
-    renderBooks();
-  });
 };
+
+const formEdit = document.getElementById("bookFormEdit");
+formEdit.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const bookId = document.getElementById("getBookId").value;
+  const bookTarget = findBook(parseInt(bookId));
+
+  const updatedBook = {
+    id: bookTarget.id,
+    title: document.getElementById("bookFormTitleEdit").value,
+    author: document.getElementById("bookFormAuthorEdit").value,
+    year: document.getElementById("bookFormYearEdit").value,
+    isComplete: document.getElementById("bookFormIsCompleteEdit").checked,
+  };
+
+  bookTarget.title = updatedBook.title;
+  bookTarget.author = updatedBook.author;
+  bookTarget.year = parseInt(updatedBook.year);
+  bookTarget.isComplete = updatedBook.isComplete;
+  updateDataToStorage();
+  renderBooks();
+});
 
 const deleteBook = (bookId) => {
   const bookTarget = findBookIndex(bookId);
@@ -345,9 +347,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .getElementById("searchBookTitle")
       .value.trim()
       .toLowerCase();
-    console.log(searchTitleBook);
     const searchResult = searchBook(searchTitleBook);
-    console.log(searchResult);
 
     renderResult(searchResult);
   });
