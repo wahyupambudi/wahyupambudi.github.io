@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wahyu Pambudi, S.Kom. — Full-Stack Developer & IT Educator</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portofolio resmi Wahyu Pambudi, S.Kom. — Full-Stack Web Developer & IT Educator di Bandar Lampung. Berpengalaman dalam merancang aplikasi web SaaS (EduPlan), SIMPKL, plugin WordPress AI, serta sistem e-commerce UMKM." />
+    <meta name="keywords"
+        content="Wahyu Pambudi, Wahyu Pambudi S.Kom, Full-Stack Developer, Web Developer Bandar Lampung, IT Educator, EduPlan, SIMPKL, SIBEJE, React Developer, Node.js, PHP, WordPress Plugin, Software Engineer Lampung" />
+    <meta name="author" content="Wahyu Pambudi, S.Kom." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://wahyupambudi.com/" />
+
+    <!-- Open Graph / Facebook SEO -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:url" content="https://wahyupambudi.com/" />
+    <meta property="og:title" content="Wahyu Pambudi, S.Kom. — Full-Stack Developer & IT Educator" />
+    <meta property="og:description"
+        content="Pengembang aplikasi web profesional & pendidik IT. Menghubungkan kebutuhan bisnis & edukasi dengan kode yang bersih, responsif, dan fungsional." />
+    <meta property="og:site_name" content="Portofolio Wahyu Pambudi" />
+
+    <!-- Twitter Card SEO -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wahyu Pambudi, S.Kom. — Full-Stack Developer & IT Educator" />
+    <meta name="twitter:description"
+        content="Portofolio pengembang web full-stack dan pendidik IT di Bandar Lampung. Spesialis SaaS, EdTech, dan WordPress Plugin." />
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://wahyupambudi.com/#person",
+          "name": "Wahyu Pambudi, S.Kom.",
+          "jobTitle": "Full-Stack Web Developer & IT Educator",
+          "email": "wahyupambudi823@gmail.com",
+          "telephone": "+6289632865955",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bandar Lampung",
+            "addressRegion": "Lampung",
+            "addressCountry": "ID"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universitas Teknokrat Indonesia"
+          },
+          "worksFor": {
+            "@type": "EducationalOrganization",
+            "name": "SMKN 1 Bandar Lampung"
+          },
+          "knowsAbout": [
+            "Full-Stack Web Development",
+            "React.js",
+            "Node.js",
+            "PHP",
+            "MySQL",
+            "PostgreSQL",
+            "WordPress & WooCommerce Plugin Development",
+            "EduTech Solutions",
+            "SaaS Architecture"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://wahyupambudi.com/#website",
+          "url": "https://wahyupambudi.com/",
+          "name": "Wahyu Pambudi — Full-Stack Developer & IT Educator",
+          "description": "Portofolio profesional Wahyu Pambudi, S.Kom., spesialis Full-Stack Web Development dan EduTech.",
+          "inLanguage": "id-ID"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        },
+                        dark: {
+                            900: '#0b0f19',
+                            850: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155',
+                        }
+                    },
+                    boxShadow: {
+                        glow: '0 0 40px -10px rgba(99, 102, 241, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Modular Custom External Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-dark-900 text-slate-200 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center gap-2 group" aria-label="Wahyu Pambudi Halaman Utama">
+                <div
+                    class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-400 flex items-center justify-center font-extrabold text-white text-lg tracking-wider shadow-md group-hover:scale-105 transition-transform">
+                    WP
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-white tracking-tight leading-none text-base">Wahyu Pambudi</span>
+                    <span class="text-xs text-brand-400 font-medium">S.Kom.</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300"
+                aria-label="Navigasi Utama">
+                <a href="#tentang" class="hover:text-brand-400 transition-colors">Tentang</a>
+                <a href="#portofolio" class="hover:text-brand-400 transition-colors">Portofolio</a>
+                <a href="#keahlian" class="hover:text-brand-400 transition-colors">Keahlian</a>
+                <a href="#pengalaman" class="hover:text-brand-400 transition-colors">Pengalaman</a>
+                <a href="#kontak" class="hover:text-brand-400 transition-colors">Kontak</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/6289632865955?text=Halo%20Wahyu%2C%20saya%20tertarik%20bekerja%20sama%20dengan%20Anda."
+                    target="_blank" rel="noopener noreferrer"
+                    class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm transition-all duration-200 shadow-md hover:shadow-brand-500/25 flex items-center gap-2">
+                    <i data-lucide="message-square" class="w-4 h-4"></i>
+                    <span>Hubungi Saya</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-toggle" aria-label="Buka Menu Navigasi Mobile"
+                class="md:hidden p-2 text-slate-400 hover:text-white rounded-lg focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu"
+            class="hidden md:hidden px-6 pt-2 pb-6 glass-card border-t border-slate-800 flex flex-col gap-4 text-sm font-medium">
+            <a href="#tentang" class="mobile-nav-link text-slate-300 hover:text-brand-400 py-1">Tentang</a>
+            <a href="#portofolio" class="mobile-nav-link text-slate-300 hover:text-brand-400 py-1">Portofolio</a>
+            <a href="#keahlian" class="mobile-nav-link text-slate-300 hover:text-brand-400 py-1">Keahlian</a>
+            <a href="#pengalaman" class="mobile-nav-link text-slate-300 hover:text-brand-400 py-1">Pengalaman</a>
+            <a href="#kontak" class="mobile-nav-link text-slate-300 hover:text-brand-400 py-1">Kontak</a>
+            <a href="https://wa.me/6289632865955" target="_blank" rel="noopener noreferrer"
+                class="w-full text-center py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-medium mt-2">
+                Hubungi Saya via WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <!-- Background Glows -->
+        <div
+            class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-brand-600/15 rounded-full blur-[140px] pointer-events-none">
+        </div>
+        <div class="absolute top-1/3 left-10 w-72 h-72 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+
+                <!-- Status Indicator Badge -->
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs text-brand-300 mb-8 badge-glow">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Tersedia untuk Proyek Web, EduTech & Kolaborasi Freelance</span>
+                </div>
+
+                <!-- Hero Headline -->
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
+                    Wahyu Pambudi, <span
+                        class="bg-gradient-to-r from-brand-400 to-indigo-200 bg-clip-text text-transparent">S.Kom.</span>
+                </h1>
+
+                <!-- Sub-headline -->
+                <h2 class="text-xl sm:text-2xl text-slate-300 font-semibold mb-4">
+                    Full-Stack Web Developer & IT Educator
+                </h2>
+
+                <!-- Brief Professional Summary -->
+                <p class="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed mb-10">
+                    Berpengalaman dalam merancang dan mengembangkan aplikasi web skala produksi, otomasi sistem
+                    kurikulum pendidikan (<strong class="text-white font-medium">EduPlan</strong>), platform monitoring
+                    PKL
+                    SMK, hingga integrasi plugin WordPress & solusi e-commerce berkonversi tinggi.
+                </p>
+
+                <!-- CTAs & Links -->
+                <div class="flex flex-wrap items-center justify-center gap-4 mb-16">
+                    <a href="#portofolio"
+                        class="px-7 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-base transition duration-200 shadow-lg shadow-brand-600/30 flex items-center gap-2">
+                        <i data-lucide="folder-kanban" class="w-5 h-5"></i>
+                        <span>Jelajahi Portofolio</span>
+                    </a>
+                    <a href="#kontak"
+                        class="px-7 py-3.5 rounded-xl glass-card hover:bg-slate-800 text-slate-200 font-semibold text-base transition duration-200 border border-slate-700/80 flex items-center gap-2">
+                        <i data-lucide="send" class="w-5 h-5"></i>
+                        <span>Mulai Diskusi Proyek</span>
+                    </a>
+                </div>
+
+                <!-- Quick Numerical Achievements -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 w-full max-w-4xl">
+                    <div class="glass-card p-5 rounded-2xl text-center">
+                        <div class="text-3xl font-extrabold text-white mb-1">5+</div>
+                        <div class="text-xs sm:text-sm text-slate-400">Tahun Pengalaman IT</div>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl text-center">
+                        <div class="text-3xl font-extrabold text-brand-400 mb-1">50+</div>
+                        <div class="text-xs sm:text-sm text-slate-400">Web Klien & UMKM</div>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl text-center">
+                        <div class="text-3xl font-extrabold text-white mb-1">3.87</div>
+                        <div class="text-xs sm:text-sm text-slate-400">IPK S1 Informatika</div>
+                    </div>
+                    <div class="glass-card p-5 rounded-2xl text-center">
+                        <div class="text-3xl font-extrabold text-emerald-400 mb-1">100%</div>
+                        <div class="text-xs sm:text-sm text-slate-400">Dedikasi Solusi Nyata</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-20 relative border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left Profile Visual Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div
+                            class="absolute -inset-1.5 bg-gradient-to-r from-brand-600 to-indigo-500 rounded-3xl blur-xl opacity-40">
+                        </div>
+                        <div
+                            class="relative glass-card p-8 rounded-3xl border border-slate-700/60 text-center sm:text-left">
+                            <div
+                                class="w-24 h-24 rounded-2xl bg-gradient-to-tr from-brand-500 to-indigo-700 mx-auto sm:mx-0 flex items-center justify-center text-white mb-6 shadow-xl">
+                                <i data-lucide="code-2" class="w-12 h-12"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-1">Wahyu Pambudi, S.Kom.</h3>
+                            <p class="text-sm text-brand-400 font-medium mb-4">Pengajar IT & Praktisi Web Development
+                            </p>
+
+                            <div class="space-y-3 pt-3 border-t border-slate-800 text-sm text-slate-300">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="map-pin" class="w-4 h-4 text-slate-500"></i>
+                                    <span>Bandar Lampung, Indonesia</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="graduation-cap" class="w-4 h-4 text-slate-500"></i>
+                                    <span>S1 Teknik Informatika (Lulusan Terbaik)</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="briefcase" class="w-4 h-4 text-slate-500"></i>
+                                    <span>SMKN 1 Bandar Lampung & Freelancer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content Narrative -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block text-brand-400 font-semibold text-sm tracking-wider uppercase">Tentang Saya
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Menghubungkan Kebutuhan Dunia Nyata dengan Kode yang Bersih dan Fungsional.
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed text-base">
+                        Saya adalah seorang praktisi IT dengan latar belakang pendidikan Teknik Informatika dan
+                        pengalaman intensif dalam pengembangan perangkat lunak modern. Di samping membagikan wawasan
+                        sebagai pendidik vokasi, saya aktif membangun platform web yang membantu efisiensi operasional
+                        organisasi, pendidik, dan pelaku UMKM.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-base">
+                        Dari sistem otomatisasi perangkat administrasi ajar guru di <strong
+                            class="text-slate-200">EduPlan</strong>, manajemen presensi dan penilaian PKL di <strong
+                            class="text-slate-200">SIMPKL</strong>, sistem inventaris lab berbasis QR Code <strong
+                            class="text-slate-200">SIBEJE</strong>, hingga integrasi plugin AI otomatisasi konten, saya
+                        berorientasi pada hasil terukur dan pengalaman pengguna yang prima.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-800/40 border border-slate-800">
+                            <div class="p-2 rounded-lg bg-brand-500/10 text-brand-400 mt-0.5">
+                                <i data-lucide="cpu" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-white text-sm">Full-Stack Capability</h3>
+                                <p class="text-xs text-slate-400">Node.js, Express, PHP, React, MySQL, PostgreSQL.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-800/40 border border-slate-800">
+                            <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 mt-0.5">
+                                <i data-lucide="layers" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-white text-sm">CMS & Custom Solutions</h3>
+                                <p class="text-xs text-slate-400">WooCommerce, Custom Plugin AI, RESTful API.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase Section -->
+    <section id="portofolio" class="py-20 bg-dark-850/50 relative border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-400 font-semibold text-sm tracking-wider uppercase">Showcase Portofolio</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4 tracking-tight">Karya & Proyek
+                    Terpilih</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Kumpulan aplikasi web produksi, platform SaaS edukasi,
+                    sistem inventaris, dan solusi digital yang telah saya kembangkan.</p>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-12" id="filter-buttons">
+                <button data-filter="all"
+                    class="filter-btn active px-5 py-2 rounded-xl text-sm font-medium transition-all bg-brand-600 text-white shadow-md">Semua
+                    Proyek</button>
+                <button data-filter="saas"
+                    class="filter-btn px-5 py-2 rounded-xl text-sm font-medium transition-all glass-card text-slate-300 hover:text-white hover:bg-slate-800">Web
+                    App & SaaS</button>
+                <button data-filter="plugin"
+                    class="filter-btn px-5 py-2 rounded-xl text-sm font-medium transition-all glass-card text-slate-300 hover:text-white hover:bg-slate-800">Tools
+                    & AI Plugin</button>
+                <button data-filter="ecommerce"
+                    class="filter-btn px-5 py-2 rounded-xl text-sm font-medium transition-all glass-card text-slate-300 hover:text-white hover:bg-slate-800">WordPress
+                    & E-Commerce</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+
+                <!-- Project 1: EduPlan -->
+                <article
+                    class="project-card group glass-card rounded-2xl overflow-hidden border border-slate-700/60 hover:border-brand-500/60 transition-all duration-300 hover:-translate-y-1.5 flex flex-col"
+                    data-category="saas">
+                    <div
+                        class="relative h-48 bg-gradient-to-tr from-indigo-950 via-slate-900 to-brand-900/60 flex items-center justify-center p-6 border-b border-slate-800">
+                        <div class="text-center">
+                            <span
+                                class="inline-block p-3 rounded-2xl bg-brand-500/20 text-brand-300 mb-2 group-hover:scale-110 transition-transform">
+                                <i data-lucide="book-open-check" class="w-8 h-8"></i>
+                            </span>
+                            <span class="block text-lg font-bold text-white tracking-wide">eduplan.web.id</span>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 text-xs font-semibold px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Live
+                            Platform</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-brand-300">Web
+                                    App / EdTech</span>
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-slate-300">PHP
+                                    / AI Integration</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors">
+                                EduPlan — Otomatisasi Administrasi Guru</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Platform SaaS asisten administrasi kurikulum pendidik untuk merumuskan perangkat ajar
+                                (RPP, Alur Tujuan Pembelajaran, Asesmen) secara cerdas dan efisien.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="openDetailModal('eduplan')"
+                                class="text-sm font-semibold text-brand-400 hover:text-brand-300 flex items-center gap-1.5">
+                                <span>Detail Spesifikasi</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                            <a href="https://eduplan.web.id" target="_blank" rel="noopener noreferrer"
+                                class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800"
+                                title="Buka Website EduPlan Langsung">
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: SIMPKL EduPlan -->
+                <article
+                    class="project-card group glass-card rounded-2xl overflow-hidden border border-slate-700/60 hover:border-brand-500/60 transition-all duration-300 hover:-translate-y-1.5 flex flex-col"
+                    data-category="saas">
+                    <div
+                        class="relative h-48 bg-gradient-to-tr from-slate-900 via-sky-950 to-indigo-900/50 flex items-center justify-center p-6 border-b border-slate-800">
+                        <div class="text-center">
+                            <span
+                                class="inline-block p-3 rounded-2xl bg-sky-500/20 text-sky-300 mb-2 group-hover:scale-110 transition-transform">
+                                <i data-lucide="clipboard-check" class="w-8 h-8"></i>
+                            </span>
+                            <span class="block text-lg font-bold text-white tracking-wide">simpkl.eduplan.web.id</span>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 text-xs font-semibold px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Live
+                            Platform</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-sky-300">Sistem
+                                    Informasi</span>
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-slate-300">MySQL
+                                    & REST API</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors">
+                                SIMPKL EduPlan</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Sistem Informasi Manajemen Praktik Kerja Lapangan (PKL) untuk siswa SMK, guru
+                                pembimbing, dan instruktur DUDI mencakup absensi GPS, jurnal harian, dan penilaian
+                                terintegrasi.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="openDetailModal('simpkl')"
+                                class="text-sm font-semibold text-brand-400 hover:text-brand-300 flex items-center gap-1.5">
+                                <span>Detail Spesifikasi</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                            <a href="https://simpkl.eduplan.web.id" target="_blank" rel="noopener noreferrer"
+                                class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800"
+                                title="Buka Website SIMPKL Langsung">
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: SIBEJE -->
+                <article
+                    class="project-card group glass-card rounded-2xl overflow-hidden border border-slate-700/60 hover:border-brand-500/60 transition-all duration-300 hover:-translate-y-1.5 flex flex-col"
+                    data-category="saas">
+                    <div
+                        class="relative h-48 bg-gradient-to-tr from-slate-900 via-emerald-950/40 to-slate-950 flex items-center justify-center p-6 border-b border-slate-800">
+                        <div class="text-center">
+                            <span
+                                class="inline-block p-3 rounded-2xl bg-emerald-500/20 text-emerald-300 mb-2 group-hover:scale-110 transition-transform">
+                                <i data-lucide="qr-code" class="w-8 h-8"></i>
+                            </span>
+                            <span class="block text-lg font-bold text-white tracking-wide">SIBEJE Inventory</span>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 text-xs font-semibold px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">React
+                            & Express</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-emerald-300">Lab
+                                    Asset Tracking</span>
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-slate-300">Node.js
+                                    / Sequelize</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors">
+                                SIBEJE (Inventaris Barang TEKAJE)</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Aplikasi inventaris sarana dan prasarana laboratorium komputer dengan fitur pelacakan
+                                aset, cetak laporan PDF, dan generate label stiker QR-Code dinamis.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="openDetailModal('sibeje')"
+                                class="text-sm font-semibold text-brand-400 hover:text-brand-300 flex items-center gap-1.5">
+                                <span>Detail Spesifikasi</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                            <button onclick="openDetailModal('sibeje')"
+                                class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800"
+                                title="Informasi SIBEJE">
+                                <i data-lucide="info" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: AwonapaKarya AI Writer Plugin -->
+                <article
+                    class="project-card group glass-card rounded-2xl overflow-hidden border border-slate-700/60 hover:border-brand-500/60 transition-all duration-300 hover:-translate-y-1.5 flex flex-col"
+                    data-category="plugin">
+                    <div
+                        class="relative h-48 bg-gradient-to-tr from-purple-950 via-slate-900 to-slate-950 flex items-center justify-center p-6 border-b border-slate-800">
+                        <div class="text-center">
+                            <span
+                                class="inline-block p-3 rounded-2xl bg-purple-500/20 text-purple-300 mb-2 group-hover:scale-110 transition-transform">
+                                <i data-lucide="sparkles" class="w-8 h-8"></i>
+                            </span>
+                            <span class="block text-lg font-bold text-white tracking-wide">AwonapaKarya AI Plugin</span>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 text-xs font-semibold px-2.5 py-1 rounded-md bg-purple-500/20 text-purple-300 border border-purple-500/30">WP
+                            Extension</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-purple-300">WordPress
+                                    Plugin</span>
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-slate-300">OpenAI
+                                    / Claude API</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors">
+                                AwonapaKarya AI Writer Plugin</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Plugin khusus WordPress untuk otomatisasi pembuatan konten blog SEO-friendly secara
+                                massal berbasis AI, auto-tagging, taxonomy sorting, dan automasi penjadwalan publish.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="openDetailModal('aiwriter')"
+                                class="text-sm font-semibold text-brand-400 hover:text-brand-300 flex items-center gap-1.5">
+                                <span>Detail Spesifikasi</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                            <button onclick="openDetailModal('aiwriter')"
+                                class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800"
+                                title="Informasi AI Writer Plugin">
+                                <i data-lucide="info" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Toko Online UMKM & Client Sites -->
+                <article
+                    class="project-card group glass-card rounded-2xl overflow-hidden border border-slate-700/60 hover:border-brand-500/60 transition-all duration-300 hover:-translate-y-1.5 flex flex-col"
+                    data-category="ecommerce">
+                    <div
+                        class="relative h-48 bg-gradient-to-tr from-amber-950/40 via-slate-900 to-slate-950 flex items-center justify-center p-6 border-b border-slate-800">
+                        <div class="text-center">
+                            <span
+                                class="inline-block p-3 rounded-2xl bg-amber-500/20 text-amber-300 mb-2 group-hover:scale-110 transition-transform">
+                                <i data-lucide="shopping-bag" class="w-8 h-8"></i>
+                            </span>
+                            <span class="block text-lg font-bold text-white tracking-wide">Client E-Commerce
+                                Sites</span>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 text-xs font-semibold px-2.5 py-1 rounded-md bg-amber-500/20 text-amber-300 border border-amber-500/30">WooCommerce</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-amber-300">Toko
+                                    Online & Katalog</span>
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-slate-300">Payment
+                                    Gateway & Ongkir</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors">
+                                Platform E-Commerce & Retail UMKM</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Pengembangan puluhan website toko online klien (seperti Toko Grosir Defan, 391printing,
+                                perdana gadget) dengan kalkulasi ongkir real-time dan checkout instan.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="openDetailModal('ecommerce')"
+                                class="text-sm font-semibold text-brand-400 hover:text-brand-300 flex items-center gap-1.5">
+                                <span>Detail Spesifikasi</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                            <button onclick="openDetailModal('ecommerce')"
+                                class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800"
+                                title="Informasi E-Commerce">
+                                <i data-lucide="info" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Travelindo & Accessibility Web App -->
+                <article
+                    class="project-card group glass-card rounded-2xl overflow-hidden border border-slate-700/60 hover:border-brand-500/60 transition-all duration-300 hover:-translate-y-1.5 flex flex-col"
+                    data-category="saas">
+                    <div
+                        class="relative h-48 bg-gradient-to-tr from-cyan-950/40 via-slate-900 to-slate-950 flex items-center justify-center p-6 border-b border-slate-800">
+                        <div class="text-center">
+                            <span
+                                class="inline-block p-3 rounded-2xl bg-cyan-500/20 text-cyan-300 mb-2 group-hover:scale-110 transition-transform">
+                                <i data-lucide="plane-takeoff" class="w-8 h-8"></i>
+                            </span>
+                            <span class="block text-lg font-bold text-white tracking-wide">Travelindo Booking
+                                System</span>
+                        </div>
+                        <span
+                            class="absolute top-4 right-4 text-xs font-semibold px-2.5 py-1 rounded-md bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">PHP
+                            & Bootstrap</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-cyan-300">Reservasi
+                                    & Travel</span>
+                                <span
+                                    class="text-[11px] font-medium px-2.5 py-0.5 rounded-md bg-slate-800 text-slate-300">MySQL
+                                    / Admin CRUD</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-300 transition-colors">
+                                Travelindo & Accessibility Web App</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Sistem pemesanan paket pariwisata online lengkap dengan panel validasi tiket dan
+                                integrasi slicing aplikasi frontend ramah aksesibilitas.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="openDetailModal('travelindo')"
+                                class="text-sm font-semibold text-brand-400 hover:text-brand-300 flex items-center gap-1.5">
+                                <span>Detail Spesifikasi</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                            <button onclick="openDetailModal('travelindo')"
+                                class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800"
+                                title="Informasi Travelindo">
+                                <i data-lucide="info" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="keahlian" class="py-20 relative border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-400 font-semibold text-sm tracking-wider uppercase">Teknologi &
+                    Kompetensi</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4 tracking-tight">Tech Stack Handal
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">Kombinasi teknologi yang biasa saya gunakan untuk
+                    membangun sistem backend yang kokoh, frontend responsif, dan infrastruktur yang stabil.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Frontend Card -->
+                <div
+                    class="glass-card p-8 rounded-3xl border border-slate-700/60 relative group hover:border-brand-500/50 transition duration-300">
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-6">
+                        <i data-lucide="layout" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Frontend Development</h3>
+                    <p class="text-slate-400 text-sm mb-6">Membangun antarmuka pengguna yang cepat, adaptif di semua
+                        perangkat, dan user-friendly.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">React.js</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">Tailwind
+                            CSS</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">JavaScript
+                            (ES6+)</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">Bootstrap</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">HTML5
+                            & Modern CSS</span>
+                    </div>
+                </div>
+
+                <!-- Backend Card -->
+                <div
+                    class="glass-card p-8 rounded-3xl border border-slate-700/60 relative group hover:border-brand-500/50 transition duration-300">
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center mb-6">
+                        <i data-lucide="server" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Backend & Database</h3>
+                    <p class="text-slate-400 text-sm mb-6">Perancangan arsitektur data terstruktur, pembuatan REST API
+                        aman, dan performa query optimal.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">Node.js
+                            (Express.js)</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">PHP</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">MySQL
+                            / MariaDB</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">PostgreSQL</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">Sequelize
+                            ORM</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">JWT
+                            Auth</span>
+                    </div>
+                </div>
+
+                <!-- CMS, Server & Tools Card -->
+                <div
+                    class="glass-card p-8 rounded-3xl border border-slate-700/60 relative group hover:border-brand-500/50 transition duration-300">
+                    <div
+                        class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-6">
+                        <i data-lucide="terminal" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">CMS, Server & Tooling</h3>
+                    <p class="text-slate-400 text-sm mb-6">Pengelolaan deployment server Linux VPS, custom tools, dan
+                        platform e-commerce.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">WordPress
+                            & Plugins</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">WooCommerce</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">Linux
+                            VPS (Nginx)</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">Git
+                            & GitHub</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">Postman
+                            API</span>
+                        <span
+                            class="px-3 py-1 rounded-lg bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700/50">AI
+                            Integration</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="pengalaman" class="py-20 bg-dark-850/40 relative border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-400 font-semibold text-sm tracking-wider uppercase">Jejak Langkah</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4 tracking-tight">Pengalaman &
+                    Pendidikan</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Rekam jejak profesional dalam mengajar, rekayasa
+                    perangkat lunak, dan capaian akademis.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto relative pl-6 sm:pl-8 border-l border-slate-700/70 space-y-12">
+
+                <!-- Timeline Item 1 -->
+                <div class="relative group">
+                    <div
+                        class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-brand-500 border-4 border-dark-900 shadow-md">
+                    </div>
+                    <span
+                        class="text-xs font-semibold px-2.5 py-1 rounded-md bg-brand-500/10 text-brand-300 border border-brand-500/20">Sekarang</span>
+                    <h3 class="text-xl font-bold text-white mt-2">Pendidik IT & Spesialis Jaringan / Web</h3>
+                    <div class="text-sm text-slate-400 font-medium mb-3">SMKN 1 Bandar Lampung</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Membimbing generasi teknisi muda dalam konsentrasi Teknik Komputer dan Jaringan (TKJ),
+                        pemrograman dasar, serta menginisiasi implementasi aplikasi penunjang sekolah seperti SIMPKL dan
+                        sistem inventaris lab.
+                    </p>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative group">
+                    <div
+                        class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-dark-900 group-hover:bg-brand-500 transition-colors">
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-800 text-slate-400">Freelance &
+                        Kontrak</span>
+                    <h3 class="text-xl font-bold text-white mt-2">Full-Stack Web Developer & WordPress Specialist</h3>
+                    <div class="text-sm text-slate-400 font-medium mb-3">Independen / Klien UMKM & Korporasi</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Menyelesaikan lebih dari 50 website klien komersial, toko online dengan integrasi payment
+                        gateway dan kurir otomatis, serta merancang SaaS EduPlan untuk mempermudah operasional ratusan
+                        pendidik.
+                    </p>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative group">
+                    <div
+                        class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-dark-900 group-hover:bg-brand-500 transition-colors">
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-800 text-slate-400">Pendidikan
+                        Tinggi</span>
+                    <h3 class="text-xl font-bold text-white mt-2">S1 Teknik Informatika — Lulusan Terbaik (IPK 3.87)
+                    </h3>
+                    <div class="text-sm text-brand-400 font-medium mb-3">Universitas Teknokrat Indonesia</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Meraih predikat kelulusan dengan pujian (Cum Laude). Fokus riset pada rekayasa perangkat lunak,
+                        sistem informasi berbasis web, dan algoritma kecerdasan buatan.
+                    </p>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative group">
+                    <div
+                        class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-dark-900 group-hover:bg-brand-500 transition-colors">
+                    </div>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-800 text-slate-400">Sertifikasi &
+                        Bootcamp Intensif</span>
+                    <h3 class="text-xl font-bold text-white mt-2">FullStack JavaScript Track</h3>
+                    <div class="text-sm text-slate-400 font-medium mb-3">Binar Academy & SYNRGY Academy</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Pelatihan intensif pengembangan aplikasi end-to-end dengan Node.js, Express, PostgreSQL,
+                        React.js, arsitektur REST API, Git flow kolaboratif, dan metodologi Agile/Scrum.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-20 relative border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div
+                class="max-w-4xl mx-auto glass-card rounded-3xl p-8 sm:p-12 border border-slate-700/70 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-80 h-80 bg-brand-600/10 rounded-full blur-3xl pointer-events-none">
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+                    <!-- Contact Info Left -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase">Siap
+                                Berkolaborasi?</span>
+                            <h2 class="text-3xl font-bold text-white mt-1">Mari Mulai Proyek Anda</h2>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Punya ide aplikasi, butuh sistem otomatisasi sekolah, atau ingin membangun platform
+                            e-commerce untuk bisnis Anda? Jangan ragu untuk berdiskusi.
+                        </p>
+
+                        <div class="space-y-4 pt-2">
+                            <a href="https://wa.me/6289632865955" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center gap-3 p-3 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition text-sm text-slate-200 border border-slate-700/50">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+                                    <i data-lucide="phone" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">WhatsApp Langsung</div>
+                                    <div class="font-medium">+62 896-3286-5955</div>
+                                </div>
+                            </a>
+
+                            <a href="mailto:wahyupambudi823@gmail.com"
+                                class="flex items-center gap-3 p-3 rounded-xl bg-slate-800/50 hover:bg-slate-800 transition text-sm text-slate-200 border border-slate-700/50">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center shrink-0">
+                                    <i data-lucide="mail" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Email Resmi</div>
+                                    <div class="font-medium">wahyupambudi823@gmail.com</div>
+                                </div>
+                            </a>
+
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-xl bg-slate-800/50 text-sm text-slate-200 border border-slate-700/50">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Lokasi Kerja</div>
+                                    <div class="font-medium">Bandar Lampung & Remote (Seluruh RI)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Right -->
+                    <div class="lg:col-span-7">
+                        <form id="contact-form" class="space-y-4" onsubmit="handleContactSubmit(event)">
+                            <div>
+                                <label for="name"
+                                    class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Nama
+                                    Lengkap</label>
+                                <input type="text" id="name" required placeholder="Contoh: Budi Santoso"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 transition-colors" />
+                            </div>
+
+                            <div>
+                                <label for="email"
+                                    class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Alamat
+                                    Email / No. WhatsApp</label>
+                                <input type="text" id="email" required placeholder="budi@domain.com atau 0812xxxx"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 transition-colors" />
+                            </div>
+
+                            <div>
+                                <label for="subject"
+                                    class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Kebutuhan
+                                    Proyek</label>
+                                <select id="subject"
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-500 transition-colors">
+                                    <option value="Aplikasi Web & SaaS (Custom)">Aplikasi Web & SaaS (Custom)</option>
+                                    <option value="Sistem Informasi Sekolah / Kampus">Sistem Informasi Sekolah / Kampus
+                                    </option>
+                                    <option value="Website E-Commerce & Toko Online">Website E-Commerce & Toko Online
+                                    </option>
+                                    <option value="Integrasi AI & Plugin Khusus">Integrasi AI & Plugin Khusus</option>
+                                    <option value="Konsultasi IT & Lainnya">Konsultasi IT & Lainnya</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message"
+                                    class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Pesan
+                                    Singkat</label>
+                                <textarea id="message" rows="4" required
+                                    placeholder="Ceritakan ide, fitur utama, atau estimasi deadline yang Anda inginkan..."
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn"
+                                class="w-full py-3.5 px-6 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-sm transition-all duration-200 shadow-md flex items-center justify-center gap-2">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                                <span>Kirim Pesan Sekarang</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800/90 text-sm text-slate-500">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-300">Wahyu Pambudi, S.Kom.</span>
+                <span>— Hak Cipta &copy; <span id="current-year"></span>. All rights reserved.</span>
+            </div>
+            <div class="flex items-center gap-5 text-slate-400">
+                <a href="mailto:wahyupambudi823@gmail.com" class="hover:text-white transition-colors"
+                    title="Kirim Email">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+                <a href="https://wa.me/6289632865955" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-white transition-colors" title="WhatsApp Message">
+                    <i data-lucide="phone-call" class="w-5 h-5"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-white transition-colors" title="Profil GitHub">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-white transition-colors" title="Profil LinkedIn">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal"
+        class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity duration-300"
+        role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div
+            class="glass-card bg-slate-900 border border-slate-700/80 rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl overflow-y-auto max-h-[90vh]">
+            <!-- Close Button -->
+            <button onclick="closeDetailModal()" aria-label="Tutup Modal Detail Proyek"
+                class="absolute top-5 right-5 p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <!-- Dynamic Modal Content -->
+            <div id="modal-content" class="space-y-6">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast"
+        class="fixed bottom-6 right-6 z-50 hidden max-w-sm glass-card bg-slate-900/95 border border-emerald-500/40 text-white p-4 rounded-2xl shadow-xl flex items-center gap-3 transition-all duration-300">
+        <div class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+            <i data-lucide="check-circle" class="w-5 h-5"></i>
+        </div>
+        <div class="text-xs">
+            <div class="font-bold text-white text-sm" id="toast-title">Pesan Terkirim!</div>
+            <div class="text-slate-300" id="toast-message">Terima kasih, pesan Anda telah tersimpan dan akan segera
+                direspons.</div>
+        </div>
+    </div>
+
+    <!-- Modular External Scripts -->
+    <script src="js/projects-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
