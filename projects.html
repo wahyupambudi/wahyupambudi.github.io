@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koleksi Lengkap Portofolio Proyek — Wahyu Pambudi, S.Kom.</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Eksplorasi seluruh portofolio proyek web, SaaS, sistem informasi, plugin WordPress, dan solusi digital karya Wahyu Pambudi, S.Kom." />
+    <meta name="author" content="Wahyu Pambudi, S.Kom." />
+    <link rel="canonical" href="https://wahyupambudi.com/projects.html" />
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        },
+                        dark: {
+                            900: '#0b0f19',
+                            850: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-dark-900 text-slate-200 font-sans antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group" aria-label="Kembali ke Beranda">
+                <div
+                    class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-400 flex items-center justify-center font-extrabold text-white text-lg tracking-wider shadow-md group-hover:scale-105 transition-transform">
+                    WP
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-white tracking-tight leading-none text-base">Wahyu Pambudi</span>
+                    <span class="text-xs text-brand-400 font-medium">S.Kom.</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-brand-400 transition-colors flex items-center gap-1.5">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    <span>Kembali ke Beranda</span>
+                </a>
+                <a href="index.html#tentang" class="hover:text-brand-400 transition-colors">Tentang</a>
+                <a href="index.html#keahlian" class="hover:text-brand-400 transition-colors">Keahlian</a>
+                <a href="index.html#kontak" class="hover:text-brand-400 transition-colors">Kontak</a>
+            </nav>
+
+            <a href="https://wa.me/6289632865955" target="_blank" rel="noopener noreferrer"
+                class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm transition flex items-center gap-2">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                <span>Diskusi Proyek</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Title & Breadcrumb -->
+            <div class="mb-10">
+                <div class="flex items-center gap-2 text-xs font-semibold text-brand-400 uppercase tracking-wider mb-2">
+                    <a href="index.html" class="hover:underline">Beranda</a>
+                    <span>/</span>
+                    <span class="text-slate-400">Arsip & Direktori Proyek</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Koleksi Lengkap Proyek Web & Solusi Digital
+                </h1>
+                <p class="text-slate-400 max-w-3xl text-base leading-relaxed">
+                    Jelajahi seluruh karya, aplikasi web SaaS, sistem informasi institusi, plugin custom WordPress, dan portal bisnis yang pernah saya bangun. Gunakan pencarian dan filter untuk menavigasi.
+                </p>
+            </div>
+
+            <!-- Search Bar & Filters Control -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-700/60 mb-10 space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                    <!-- Search Input -->
+                    <div class="md:col-span-6 relative">
+                        <i data-lucide="search" class="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2"></i>
+                        <input type="text" id="project-search" placeholder="Cari nama proyek, teknologi (React, PHP, Node.js), atau deskripsi..."
+                            class="w-full pl-12 pr-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 transition" />
+                    </div>
+
+                    <!-- Category Filter Dropdown -->
+                    <div class="md:col-span-3">
+                        <select id="category-select"
+                            class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-sm text-slate-300 focus:outline-none focus:border-brand-500 transition">
+                            <option value="all">Semua Kategori</option>
+                            <option value="Web App & SaaS">Web App & SaaS</option>
+                            <option value="Sistem Informasi Sekolah">Sistem Informasi Sekolah</option>
+                            <option value="Internal Web App">Internal Web App</option>
+                            <option value="Tools & AI Plugins">Tools & AI Plugins</option>
+                            <option value="E-Commerce">E-Commerce</option>
+                            <option value="Web Application">Web Application</option>
+                            <option value="Media & Content">Media & Content</option>
+                        </select>
+                    </div>
+
+                    <!-- Tech Filter Dropdown -->
+                    <div class="md:col-span-3">
+                        <select id="tech-select"
+                            class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-sm text-slate-300 focus:outline-none focus:border-brand-500 transition">
+                            <option value="all">Semua Teknologi</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Node.js">Node.js / Express</option>
+                            <option value="React.js">React.js</option>
+                            <option value="Python">Python / Flask</option>
+                            <option value="WordPress">WordPress / WooCommerce</option>
+                            <option value="MySQL">MySQL</option>
+                            <option value="API">API Integration</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Active Counter -->
+                <div class="flex items-center justify-between text-xs text-slate-400 pt-2 border-t border-slate-800">
+                    <span>Menampilkan <strong id="visible-count" class="text-brand-400 font-bold">0</strong> proyek</span>
+                    <button id="reset-filter" class="text-brand-400 hover:text-brand-300 underline font-medium">Reset Filter</button>
+                </div>
+            </div>
+
+            <!-- Projects Grid Container -->
+            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cards rendered dynamically via JavaScript -->
+            </div>
+
+            <!-- Empty State Notice -->
+            <div id="empty-state" class="hidden text-center py-20">
+                <div class="w-16 h-16 rounded-2xl bg-slate-800/80 text-slate-400 flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="folder-search" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">Tidak ada proyek yang cocok</h3>
+                <p class="text-sm text-slate-400">Coba ubah kata kunci pencarian atau reset filter kategori.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="glass-card bg-slate-900/95 border border-slate-700/80 rounded-2xl max-w-2xl w-full p-6 sm:p-8 max-h-[90vh] overflow-y-auto space-y-6 relative shadow-2xl">
+            <button onclick="closeDetailModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-lg hover:bg-slate-800 transition">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div id="modal-content" class="space-y-6"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 bg-dark-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; <span id="current-year"></span> Wahyu Pambudi, S.Kom. Hak Cipta Dilindungi.</p>
+            <a href="index.html" class="text-brand-400 hover:underline">Kembali ke Beranda Utama</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/projects-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("projects-container");
+            const emptyState = document.getElementById("empty-state");
+            const searchInput = document.getElementById("project-search");
+            const categorySelect = document.getElementById("category-select");
+            const techSelect = document.getElementById("tech-select");
+            const visibleCount = document.getElementById("visible-count");
+            const resetBtn = document.getElementById("reset-filter");
+
+            if (!container || typeof projectDatabase === "undefined") return;
+
+            const allProjects = Object.entries(projectDatabase).map(([key, data]) => ({
+                key,
+                ...data
+            }));
+
+            function renderProjects(list) {
+                container.innerHTML = "";
+                visibleCount.textContent = list.length;
+
+                if (list.length === 0) {
+                    emptyState.classList.remove("hidden");
+                    return;
+                }
+                emptyState.classList.add("hidden");
+
+                list.forEach((p) => {
+                    const techPills = p.tech
+                        .slice(0, 3)
+                        .map(t => `<span class="text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-800 text-slate-300">${t}</span>`)
+                        .join("");
+
+                    const liveBadge = p.liveUrl 
+                        ? `<span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Live</span>`
+                        : `<span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-slate-800 text-slate-400">${p.status || "Internal"}</span>`;
+
+                    const card = document.createElement("article");
+                    card.className = "glass-card rounded-2xl p-6 border border-slate-700/60 hover:border-brand-500/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between";
+                    card.innerHTML = `
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="text-xs font-semibold text-brand-400 uppercase tracking-wider">${p.category}</span>
+                                ${liveBadge}
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2 hover:text-brand-300 transition-colors">${p.title}</h3>
+                            <p class="text-xs text-slate-400 mb-4 line-clamp-3 leading-relaxed">${p.description}</p>
+                            <div class="flex flex-wrap gap-1.5 mb-6">${techPills}</div>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <button onclick="openDetailModal('${p.key}')" class="text-xs font-bold text-brand-400 hover:text-brand-300 flex items-center gap-1">
+                                <span>Lihat Spesifikasi</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                            ${p.liveUrl ? `<a href="${p.liveUrl}" target="_blank" rel="noopener noreferrer" class="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800" title="Kunjungi Website"><i data-lucide="external-link" class="w-4 h-4"></i></a>` : ''}
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+
+                if (typeof lucide !== "undefined") {
+                    lucide.createIcons();
+                }
+            }
+
+            function filterProjects() {
+                const query = searchInput.value.toLowerCase().trim();
+                const selectedCat = categorySelect.value;
+                const selectedTech = techSelect.value;
+
+                const filtered = allProjects.filter((p) => {
+                    const matchQuery =
+                        p.title.toLowerCase().includes(query) ||
+                        p.description.toLowerCase().includes(query) ||
+                        p.category.toLowerCase().includes(query) ||
+                        p.tech.some(t => t.toLowerCase().includes(query));
+
+                    const matchCategory = (selectedCat === "all") || (p.category === selectedCat);
+                    const matchTech = (selectedTech === "all") || p.tech.some(t => t.toLowerCase().includes(selectedTech.toLowerCase()));
+
+                    return matchQuery && matchCategory && matchTech;
+                });
+
+                renderProjects(filtered);
+            }
+
+            searchInput.addEventListener("input", filterProjects);
+            categorySelect.addEventListener("change", filterProjects);
+            techSelect.addEventListener("change", filterProjects);
+
+            resetBtn.addEventListener("click", () => {
+                searchInput.value = "";
+                categorySelect.value = "all";
+                techSelect.value = "all";
+                filterProjects();
+            });
+
+            // Initial render
+            renderProjects(allProjects);
+        });
+    </script>
+</body>
+</html>
